@@ -1,0 +1,10 @@
+## Requirements
+
+- **Tools**: Flex, Bison, GCC
+- **Commands to Compile and Run**:
+```bash
+
+bison -d boolcalc.y
+flex boolcalc.l
+gcc -lm boolcalc.tab.c lex.yy.c -o boolcalc
+./boolcalc
